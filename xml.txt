@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rr"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@drawable/log5"
+    tools:context="com.example.a303b_1.login.MainActivity"
+    android:orientation="vertical">
+<LinearLayout android:id="@+id/ll1"
+    android:layout_marginBottom="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/person_1"/>
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:hint="NAME"
+        android:inputType="textPersonName" />
+</LinearLayout>
+<LinearLayout android:id="@+id/ll2"
+    android:layout_below="@id/ll1"
+    android:layout_marginBottom="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/lock_1"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:hint="PASSWORD"
+        android:inputType="textPassword" />
+    </LinearLayout>
+<LinearLayout android:id="@+id/ll3"
+    android:layout_below="@id/ll2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_marginLeft="80dp"
+        android:id="@+id/btnLogin"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="@android:color/black"
+        android:text="Login"
+        android:textSize="20sp"/>
+</LinearLayout>
+
+    <LinearLayout android:id="@+id/ll4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll3"
+        android:layout_marginTop="26dp">
+    <TextView
+        android:layout_marginLeft="90dp"
+        android:id="@+id/reg"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="@android:color/black"
+        android:text="If not register? Register Here!" />
+</LinearLayout>
+
+</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/man2"
+    tools:context="com.example.a303b_1.login.Register"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout android:id="@+id/rp1"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_person_black_24dp"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@android:color/black"
+            android:hint="NAME"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/rp2"
+        android:layout_below="@id/rp1"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_lock_black_24dp"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@android:color/black"
+            android:hint="PASSWORD"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/rp3"
+        android:layout_below="@id/rp2"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_phone_black_24dp"/>
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@android:color/black"
+            android:hint="PHONE NO"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/rp4"
+        android:layout_below="@id/rp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@color/dark_grey"
+            android:layout_marginLeft="95dp"
+            android:id="@+id/btnReg"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:text="Register" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/rp5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rp4"
+        android:layout_alignLeft="@+id/rp4"
+        android:layout_alignStart="@+id/rp4"
+        android:layout_marginTop="26dp">
+    <Button
+        android:layout_marginLeft="95dp"
+        android:id="@+id/login111"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="@android:color/black"
+        android:text="Login" />
+</LinearLayout>
+</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user1"
+    android:orientation="vertical"
+    tools:context="com.example.a303b_1.login.USER_IN">
+    <LinearLayout android:id="@+id/i1"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:hint="AGE"
+            android:textStyle="bold"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/i2"
+        android:layout_below="@+id/i1"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/work_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:textStyle="bold"
+            android:hint="WORK HOURS"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/i3"
+        android:layout_below="@+id/i2"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/sleeping_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:textStyle="bold"
+            android:hint="SLEEPING HOURS"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/i4"
+        android:layout_below="@+id/i3"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="33sp"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/s1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/spinner"
+            >
+       </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/b5"
+        android:layout_below="@id/i4"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/next"
+            android:layout_marginLeft="120dp"
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:onClick="next"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="NEXT" />
+    </LinearLayout>
+</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bltime"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a303b_1.login.Ak">
+    <LinearLayout android:id="@+id/f1"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/breakfast_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:textStyle="bold"
+            android:hint="BREAKFAST TIME"
+            android:textColor="@color/dark_black"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/f2"
+        android:layout_below="@+id/f1"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/lunch_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:hint="LUNCH TIME"
+            android:textStyle="bold"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/f3"
+        android:layout_below="@+id/f2"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/eve_snacks_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:hint="EVE_SNACKS TIME"
+            android:textStyle="bold"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/f4"
+        android:layout_below="@+id/f3"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/dinner_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:hint="DINNER TIME"
+            android:textStyle="bold"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/b5"
+        android:layout_below="@id/f4"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/next2"
+            android:layout_marginLeft="120dp"
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:onClick="NEXT"
+            android:text="NEXT" />
+    </LinearLayout>
+</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/weight"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a303b_1.login.USER_INFO">
+<LinearLayout android:id="@+id/b1"
+    android:layout_marginBottom="80dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:textStyle="bold"
+        android:hint="WEIGHT(kg)"
+        android:inputType="number|numberDecimal"
+        android:textSize="20sp"/>
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/b2"
+    android:layout_below="@id/b1"
+    android:layout_marginBottom="80dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:textStyle="bold"
+        android:hint="HEIGHT(cm)"
+        android:inputType="number|numberDecimal"
+        android:textSize="20sp"/>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/b3"
+        android:layout_below="@id/b2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/calc"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calculateBMI"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/calculateBMI" />
+       </LinearLayout>
+
+</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a303b_1.login.BMI_No">
+    <LinearLayout
+        android:id="@+id/bdddd1as"
+        android:layout_width="500sp"
+        android:layout_height="180sp"
+        >
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/maigi" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bdddd2as"
+        android:layout_below="@+id/bdddd1as"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:layout_width="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="You Are Normal"
+            android:textStyle="bold"
+            android:textColor="@color/dark_black"
+            android:textSize="25sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/bdddd3as"
+        android:layout_below="@id/bdddd2as"
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/table_2" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/b4d47as"
+        android:layout_below="@+id/bdddd3as"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Diet Chart"/>
+</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oo"
+    android:gravity="center_vertical"
+    tools:context="com.example.a303b_1.login.Maintain">
+   <ScrollView
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+       android:id="@+id/linearLayout1">
+        <TextView
+            android:id="@+id/breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BREAKFAST:"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/br1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Glass Milk,1 Plate Upma,2 Brawn Braid,2 Boiled Egg,Idli
+"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LUNCH:"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/l1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="2 Chapati,Vegetable,1 Bowl Rice-Dal,Sweet Dish,50gm Curd
+"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/eve_snacks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EVENING SNACKS:"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ev1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="1 Bowl Oats,1 Glass,Fruits Juice,2 Sandwich
+"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/dinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="DINNER:"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/d1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="1 Plate Khichdi,1 Bhakari,1 Bowl Soup,Khir,70gm Chicken
+"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/sleep"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SLEEP HOURS: 7.5 Hours
+"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/water_in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="WATER INTAKE: 3 liters
+"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/mexe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Exercise"
+            android:text="Exercise"
+            android:textSize="20sp"
+            android:textColor="@color/dark_black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"/>
+    <Button
+            android:id="@+id/opt"
+            android:layout_marginLeft="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Another_Option"
+            android:text="Another Option"
+        android:textColor="@color/dark_black"
+        android:textSize="20sp"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oo"
+    android:layout_gravity="center_vertical"
+    tools:context="com.example.a303b_1.login.maintain_2">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lin1">
+        <TextView
+            android:id="@+id/breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BREAKFAST:"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/br2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1Cup Black Tea,1Plate Pohe,2 Dosa,2 Parathas
+"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LUNCH:"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/l2"
+            android:layout_width="wrap_content"
+s            android:layout_height="wrap_content"
+            android:text="2 Chapati,Vegetable,Sprouts,1 Bowl Rajma chawal,1Glass Buttermilk
+"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/eve_snacks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EVENING SNACKS:"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ev2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="1 Fruit,1Glass Sugercane juice,1Cup Coffee,Sweetcorn
+"
+            android:textSize="25sp" />
+
+
+
+        <TextView
+            android:id="@+id/dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DINNER:"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/d2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1Bowl Dal-rice,2Pieces Salmon,
+1 Bhakari,Salad
+"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/sleep2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SLEEP HOURS: 7.5 HOURS
+"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/water_in2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="WATER INTAKE: 3 liters
+"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/mexe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Exercise"
+            android:text="Exercise"
+            android:textSize="25sp"
+            android:textColor="@color/dark_black"
+            android:layout_marginLeft="120dp"/>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a303b_1.login.Exe_maintain">
+   <ScrollView
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/g1"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/skipping" />
+            <TextView
+                android:id="@+id/exem1"
+                android:layout_below="@id/g1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Skipping Exercise"
+                android:textSize="20sp"
+                android:textColor="@color/dark_black"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_below="@id/exem1"
+                android:id="@+id/g2"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:src="@drawable/push_up" />
+            <TextView
+                android:id="@+id/exem2"
+                android:layout_below="@id/g2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Push Ups Exercise"
+                android:textSize="20sp"
+                android:textColor="@color/dark_black"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_below="@id/exem2"
+                android:id="@+id/g3"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:src="@drawable/jumping_jacks" />
+            <TextView
+                android:id="@+id/exem3"
+                android:layout_below="@id/g3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Jumping Jack Exercise"
+                android:textSize="20sp"
+                android:textColor="@color/dark_black"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_below="@id/exem3"
+                android:id="@+id/g4"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:src="@drawable/good_mor" />
+            <TextView
+                android:id="@+id/exem4"
+                android:layout_below="@id/g4"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Good Morning Exercise"
+                android:textSize="20sp"
+                android:textColor="@color/dark_black"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_below="@id/exem4"
+                android:id="@+id/g5"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:src="@drawable/ki_crunch" />
+            <TextView
+                android:id="@+id/exem5"
+                android:layout_below="@id/g5"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Kick Crunch Exercise"
+                android:textSize="20sp"
+                android:textColor="@color/dark_black"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
